@@ -9,6 +9,19 @@
         "description": "The date and time when the document was last updated.",
         "format": "date-time"
       },
+      "departments": {
+        "type": "array",
+        "description": "The departments and/or teams that own the document.",
+        "items": {
+          "enum": [
+            "Rubin Observatory Operations",
+            "Data Production",
+            "System Performance",
+            "Education and Public Outreach",
+            "Director's Office"
+          ]
+        }
+      },
       "description": {
         "type": "string",
         "description": "A description or summary of the document, useful for previewing"

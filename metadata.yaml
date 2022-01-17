@@ -11,3 +11,6 @@
   scmRepositoryUrl: https://github.com/lsst/pipelines_lsst_io
   storageRepository: lsst.io
   dateUpdated: '2020-01-01T00:00:00'
+  departments:
+    - Data Production
+    - System Performance
