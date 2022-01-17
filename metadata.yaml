@@ -1,4 +1,5 @@
-- title: LSST Science Pipelines
+- identifier: https://pipelines.lsst.io/
+  title: LSST Science Pipelines
   description: |
     The LSST Science Pipelines are designed to enable optical and
     near-infrared astronomy in the “big data” era. While they are being
@@ -7,3 +8,6 @@
     interfaces can be extended to address any optical or
     near-infrared dataset.
   url: https://pipelines.lsst.io/
+  scmRepositoryUrl: https://github.com/lsst/pipelines_lsst_io
+  storageRepository: lsst.io
+  dateUpdated: '2020-01-01T00:00:00'
