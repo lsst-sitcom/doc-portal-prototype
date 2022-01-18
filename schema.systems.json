@@ -1,0 +1,508 @@
+{
+  "$defs": {
+    "systemTags": {
+      "enum": [
+        [
+          "Data Production"
+        ],
+        [
+          "Data Production",
+          "LSST Science Pipelines"
+        ],
+        [
+          "Data Production",
+          "Rubin Science Platform"
+        ],
+        [
+          "Data Production",
+          "Rubin Science Platform",
+          "Nublado"
+        ],
+        [
+          "Data Production",
+          "Rubin Science Platform",
+          "Gafaelfawr"
+        ],
+        [
+          "Data Production",
+          "Rubin Science Platform",
+          "Phalanx"
+        ],
+        [
+          "Data Production",
+          "Rubin Science Platform",
+          "Moneypenny"
+        ],
+        [
+          "Data Production",
+          "Rubin Science Platform",
+          "Squareone"
+        ],
+        [
+          "Summit Site"
+        ],
+        [
+          "Summit Site",
+          "AuxTel"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Ventilation Gates"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Ventilation Gates",
+          "Fans"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Ventilation Gates",
+          "Fans",
+          "Fan Control"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Ventilation Gates",
+          "Fans",
+          "Air Extracting System"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Pneumatic System"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Pneumatic System",
+          "Air Compressor"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Instrument Hoist"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Electronic Cabinet"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Main Door"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Upper Shutter"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Upper Shutter",
+          "Motor"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Lower Shutter"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Lower Shutter",
+          "Motor"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Azimuthal Rotator"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Calibration Equipment"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Calibration Equipment",
+          "Flat-Field Screen"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Calibration Equipment",
+          "Flat-Field Screen",
+          "Coating"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Calibration Equipment",
+          "Flat-Field Screen",
+          "Tunable Laser"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Calibration Equipment",
+          "Lighting Source"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Calibration Equipment",
+          "Monochromator"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Controller"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Compact Rio"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "KollMorgan Motors Controllers"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "PDU"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Power Supply"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Dome",
+          "Power Supply",
+          "UPS"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Kiloarc IR Filter water chiller"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Cryotiger Compressor"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "Air Compressor"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Building",
+          "KVM Station"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "AuxTel Camera"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mirrors"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mirrors",
+          "Primary"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mirrors",
+          "Secondary"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mirrors",
+          "Tertiary"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mount"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mount",
+          "Support System"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mount",
+          "Mirror Cover"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Telescope",
+          "Mount",
+          "Control System"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Spectrograph"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Spectrograph",
+          "Protective Frame"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Spectrograph",
+          "Cable Drum"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Spectrograph"
+        ],
+        [
+          "Summit Site",
+          "AuxTel",
+          "Integration Lab"
+        ],
+        [
+          "Summit Site",
+          "Simonyi"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Structure"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Rotation Enclosure"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Azimuth Rotation"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Aperture Shutters"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Thermal Ventilation"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Heat Control"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Light Wind Screens"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Rear Access Door"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Louvers"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Bridge Camera"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Access"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome",
+          "Dome Control System"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Calibration System"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Calibration System",
+          "Beam Projector"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Calibration System",
+          "Laser System"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Calibration System",
+          "White Light Sources"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Calibration System",
+          "Fiber Spectrographs"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Calibration System",
+          "Electrometer"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Calibration System",
+          "Calibration Screen"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome Bridge Crane"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome Bridge Crane",
+          "Temporary Crane"
+        ],
+        [
+          "Summit Site",
+          "Simonyi",
+          "Dome Bridge Crane",
+          "Crane Hook"
+        ]
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

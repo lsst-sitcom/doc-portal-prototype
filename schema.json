@@ -52,6 +52,11 @@
           "pdm-vault"
         ]
       },
+      "systems": {
+        "type": "array",
+        "$ref": "./schema.systems.json",
+        "description": "The systems that this document refers to. A document can reference more than one system. Each system is described by an array of increasing specifificity."
+      },
       "title": {
         "type": "string",
         "description": "The name of the document"
