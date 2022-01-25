@@ -15,6 +15,7 @@
         "items": {
           "enum": [
             "Rubin Observatory Operations",
+            "Camera",
             "Data Production",
             "System Performance",
             "Education and Public Outreach",
