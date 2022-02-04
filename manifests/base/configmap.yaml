@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: 'protorubinportal'
+  labels:
+    app.kubernetes.io/name: 'protorubinportal'
+data:
+  # These configurations are injected as environment variables into the
+  # app container.
+  SAFIR_NAME: 'protorubinportal'
+  SAFIR_PROFILE: 'production'
+  SAFIR_LOGGER: 'protorubinportal'
+  SAFIR_LOG_LEVEL: 'INFO'

@@ -1,8 +1,20 @@
+.PHONY: update-deps
+update-deps:
+	pip install --upgrade pip-tools "pip<22" setuptools
+	pip-compile --upgrade --build-isolation --generate-hashes --output-file requirements/main.txt requirements/main.in
+	pip-compile --upgrade --build-isolation --generate-hashes --output-file requirements/dev.txt requirements/dev.in
+
 .PHONY: init
 init:
-	pip install -U pre-commit
+	pip install --editable .
+	pip install --upgrade -r requirements/main.txt -r requirements/dev.txt
+	rm -rf .tox
+	pip install --upgrade tox
 	pre-commit install
 
-.PHONY: test
-test:
-	pre-commit run --all-files
+.PHONY: update
+update: update-deps init
+
+.PHONY: run
+run:
+	tox -e run
