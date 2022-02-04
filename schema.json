@@ -9,9 +9,54 @@
         "description": "The date and time when the document was last updated.",
         "format": "date-time"
       },
+      "departments": {
+        "type": "array",
+        "description": "The departments and/or teams that own the document.",
+        "items": {
+          "enum": [
+            "Rubin Observatory Operations",
+            "Camera",
+            "Data Production",
+            "System Performance",
+            "Education and Public Outreach",
+            "Director's Office"
+          ]
+        }
+      },
       "description": {
         "type": "string",
         "description": "A description or summary of the document, useful for previewing"
+      },
+      "identifier": {
+        "type": "string",
+        "description": "A unique identifier for this document. If the document's storage repository uses a unique identifier, use that (for example, a DocuShare handle or a Jira item identifier). Otherwise, use the url as the identifier."
+      },
+      "scmRepositoryUrl": {
+        "type": "string",
+        "description": "The URL of the source code repository from which this document is generated, if available, if available.",
+        "format": "uri"
+      },
+      "seriesIdentifier": {
+        "type": "string",
+        "description": "The series this document is part of, if applicable. For example, a handle prefix (LDM)."
+      },
+      "storageRepository": {
+        "type": "string",
+        "description": "The document's primary storage repository. Specify null if the repository is unknown.",
+        "enum": [
+          null,
+          "lsst.io",
+          "docushare.lsstcorp.org",
+          "jira.lsstcorp.org",
+          "confluence.lsstcorp.org",
+          "euporie",
+          "pdm-vault"
+        ]
+      },
+      "systems": {
+        "type": "array",
+        "$ref": "./schema.systems.json",
+        "description": "The systems that this document refers to. A document can reference more than one system. Each system is described by an array of increasing specifificity."
       },
       "title": {
         "type": "string",
@@ -24,7 +69,10 @@
       }
     },
     "required": [
-      "title"
+      "identifier",
+      "title",
+      "url",
+      "storageRepository"
     ]
   }
 }
