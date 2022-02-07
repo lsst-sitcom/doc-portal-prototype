@@ -2,10 +2,13 @@ from __future__ import annotations
 
 from fastapi import Depends
 from safir.dependencies.logger import logger_dependency
-from starlette.responses import HTMLResponse
+from starlette.requests import Request
 from structlog.stdlib import BoundLogger
+from starlette.templating import Jinja2Templates, _TemplateResponse
 
 from .router import router
+
+templates = Jinja2Templates(directory='templates')
 
 
 @router.get(
@@ -14,8 +17,8 @@ from .router import router
     summary="Homepage",
 )
 async def get_index(
+    request: Request,
     logger: BoundLogger = Depends(logger_dependency),
-) -> HTMLResponse:
-    """The portal's homepage.
-    """
-    return HTMLResponse("<html><body><h1>Hello, world!</h1></body></html>")
+) -> _TemplateResponse:
+    """The portal's homepage."""
+    return templates.TemplateResponse('homepage.jinja', {'request': request})
