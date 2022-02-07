@@ -182,9 +182,9 @@ pytest==7.0.0 \
     #   -r requirements/dev.in
     #   pytest-asyncio
     #   pytest-cov
-pytest-asyncio==0.17.2 \
-    --hash=sha256:6d895b02432c028e6957d25fc936494e78c6305736e785d9fee408b1efbc7ff4 \
-    --hash=sha256:e0fe5dbea40516b661ef1bcfe0bd9461c2847c4ef4bb40012324f2454fb7d56d
+pytest-asyncio==0.18.0 \
+    --hash=sha256:5c510e5d3ad0f97bab0ae0223363d2aa6329bbbafb0981d96dbed6a804a99349 \
+    --hash=sha256:5e33f5010402309ff4e8cdec04e76b057ae73e0c132f12c6aa2fa6ec8cabfbf1
     # via -r requirements/dev.in
 pytest-cov==3.0.0 \
     --hash=sha256:578d5d15ac4a25e5f961c938b85a05b09fdaae9deef3bb6de9a6e766622ca7a6 \
@@ -263,7 +263,7 @@ typing-extensions==4.0.1 \
     # via
     #   -c requirements/main.txt
     #   mypy
-virtualenv==20.13.0 \
-    --hash=sha256:339f16c4a86b44240ba7223d0f93a7887c3ca04b5f9c8129da7958447d079b09 \
-    --hash=sha256:d8458cf8d59d0ea495ad9b34c2599487f8a7772d796f9910858376d1600dd2dd
+virtualenv==20.13.1 \
+    --hash=sha256:45e1d053cad4cd453181ae877c4ffc053546ae99e7dd049b9ff1d9be7491abf7 \
+    --hash=sha256:e0621bcbf4160e4e1030f05065c8834b4e93f4fcc223255db2a823440aca9c14
     # via pre-commit

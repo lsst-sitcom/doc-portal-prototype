@@ -9,6 +9,7 @@
 fastapi
 starlette
 uvicorn[standard]
+jinja2
 
 # Other dependencies.
 safir
