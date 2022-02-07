@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from fastapi import Depends
 from safir.dependencies.logger import logger_dependency
 from starlette.requests import Request
@@ -8,7 +10,7 @@ from starlette.templating import Jinja2Templates, _TemplateResponse
 
 from .router import router
 
-templates = Jinja2Templates(directory='templates')
+templates = Jinja2Templates(directory=Path(__file__).parent / 'templates')
 
 
 @router.get(
